@@ -29,7 +29,7 @@ class About extends StatelessWidget {
     var size = MediaQuery.of(context).size;
     return Container(
       height: size.height,
-      width:size.width - 100,
+      width: size.width - 100,
       child: Row(
         children: [
           //About me
@@ -45,7 +45,7 @@ class About extends StatelessWidget {
                     CustomText(
                       text: "01.",
                       textsize: 20.0,
-                      color: Color(0xff61F9D5),
+                      color: Color.fromRGBO(25, 218, 15, 1),
                       fontWeight: FontWeight.w700,
                     ),
                     SizedBox(
@@ -77,14 +77,14 @@ class About extends StatelessWidget {
                   children: [
                     CustomText(
                       text:
-                          "Hello! I'm Tushar, a Freelancer based in Nashik, IN.\n\nI enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.\n\n",
+                          "Hello! I'm Kiran, a Software Engineer(Backend) based in Bangalore, IN.\n\nI enjoy building things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that scales.\n\n",
                       textsize: 16.0,
                       color: Color(0xff828DAA),
                       letterSpacing: 0.75,
                     ),
                     CustomText(
                       text:
-                          "Shortly currently, I am purshuing my Bachlor's degree in Computter science and Engineering at University of Pune, as well as doing freelancing where I work on a wide variety of interesting and meaningful projects on a daily basis.\n\n",
+                          "I pursued my Bachlor's degree in Computer science and Engineering at University of VTU.\n\n",
                       textsize: 16.0,
                       color: Color(0xff828DAA),
                       letterSpacing: 0.75,
@@ -103,17 +103,17 @@ class About extends StatelessWidget {
                 Container(
                   height: size.height * 0.15,
                   width: size.width,
-                  child: Wrap(  
+                  child: Wrap(
                     children: [
                       Container(
                         width: size.width * 0.20,
                         height: size.height * 0.15,
                         child: Column(
                           children: [
-                            technology(context, "Dart"),
+                            technology(context, "Golang"),
+                            technology(context, "Java"),
                             technology(context, "Flutter"),
-                            technology(context, "Firebase"),
-                            technology(context, "UI/UX (Adobe Xd)"),
+                            technology(context, "Docker and Kubernetes"),
                           ],
                         ),
                       ),
@@ -122,10 +122,10 @@ class About extends StatelessWidget {
                         height: size.height * 0.15,
                         child: Column(
                           children: [
-                            technology(context, "C/C++, Java."),
-                            technology(context, "HTML & (S)CSS"),
+                            technology(context, "gRPC"),
+                            technology(context, "MongoDB"),
                             technology(context, "MYSQL"),
-                            technology(context, "Git - Github"),
+                            technology(context, "AWS and GCP"),
                           ],
                         ),
                       )
@@ -149,7 +149,7 @@ class About extends StatelessWidget {
                     top: size.height * 0.12,
                     left: size.width * 0.120,
                     child: Card(
-                      color: Color(0xff61F9D5),
+                      color: Color.fromRGBO(25, 218, 15, 0.5),
                       child: Container(
                         margin: EdgeInsets.all(2.75),
                         height: size.height / 2,
@@ -177,7 +177,7 @@ class CustomImageAnimation extends StatefulWidget {
 }
 
 class _CustomImageAnimationState extends State<CustomImageAnimation> {
-  Color customImageColor = Color(0xff61F9D5).withOpacity(0.5);
+  Color customImageColor = Color.fromRGBO(25, 218, 15, 1).withOpacity(0.15);
   // ignore: unused_field
   int _enterCounter = 0;
   // ignore: unused_field
@@ -193,7 +193,7 @@ class _CustomImageAnimationState extends State<CustomImageAnimation> {
 
   void _incrementExit(PointerEvent details) {
     setState(() {
-      customImageColor = Color(0xff61F9D5).withOpacity(0.5);
+      customImageColor = Color.fromRGBO(25, 218, 15, 1).withOpacity(0.15);
       _exitCounter++;
     });
   }
@@ -221,7 +221,7 @@ class _CustomImageAnimationState extends State<CustomImageAnimation> {
             color: Colors.black54,
             child: Image(
               fit: BoxFit.cover,
-              image: AssetImage("images/pic1.jpeg"),
+              image: AssetImage("images/imKiran.jpg"),
             ),
           ),
           Container(

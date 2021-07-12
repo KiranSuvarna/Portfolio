@@ -25,7 +25,7 @@ class _WorkState extends State<Work> {
               CustomText(
                 text: "02.",
                 textsize: 20.0,
-                color: Color(0xff61F9D5),
+                color: Color.fromRGBO(25, 218, 15, 1),
                 fontWeight: FontWeight.w700,
               ),
               SizedBox(
@@ -75,26 +75,16 @@ class _WorkState extends State<Work> {
                             children: [
                               CircleAvatar(
                                 backgroundColor: Colors.pink,
-                                child: FaIcon(FontAwesomeIcons.laptopHouse,
+                                child: FaIcon(FontAwesomeIcons.dev,
                                     color: Colors.white),
                               ),
                               CircleAvatar(
                                 backgroundColor: Colors.red,
-                                child: FaIcon(FontAwesomeIcons.freeCodeCamp,
+                                child: FaIcon(FontAwesomeIcons.dev,
                                     color: Colors.white),
                               ),
                               CircleAvatar(
                                 backgroundColor: Colors.brown,
-                                child: FaIcon(FontAwesomeIcons.laptopCode,
-                                    color: Colors.white),
-                              ),
-                              CircleAvatar(
-                                backgroundColor: Colors.deepOrange,
-                                child: FaIcon(FontAwesomeIcons.coffee,
-                                    color: Colors.white),
-                              ),
-                              CircleAvatar(
-                                backgroundColor: Colors.deepPurple,
                                 child: FaIcon(FontAwesomeIcons.dev,
                                     color: Colors.white),
                               ),
