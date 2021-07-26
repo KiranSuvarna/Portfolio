@@ -127,7 +127,8 @@ class _WebHomeState extends State<WebHome> {
                           backgroundColor: Color.fromRGBO(25, 218, 15, 1),
                           hoverElevation: 50.0,
                           onPressed: () {
-                            method.launchURL("https://www.google.co.in");
+                            method.launchURL(
+                                "https://drive.google.com/file/d/1YnVivMUBV2RQxp2kk4ZbVvnorD5EbsNN/view");
                           },
                           label: Text("Resume"),
                         ),
@@ -453,7 +454,7 @@ class _WebHomeState extends State<WebHome> {
                                                 100,
                                         //color: Colors.white,
                                         child: Text(
-                                          "Designed & Built by Tushar Nikam 💙 Flutter",
+                                          "Designed & Built by Tushar Nikam",
                                           style: TextStyle(
                                             color:
                                                 Colors.white.withOpacity(0.4),

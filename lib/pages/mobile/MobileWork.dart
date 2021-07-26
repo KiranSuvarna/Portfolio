@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:imkiran_me/Widget/CustomText.dart';
-import 'package:imkiran_me/Widget/Workbox.dart';
+import 'package:imkiran_me/widget/WorkBox.dart';
 
-class WebWork extends StatefulWidget {
+class MobileWork extends StatefulWidget {
   @override
-  _WebWorkState createState() => _WebWorkState();
+  _MobileWorkState createState() => _MobileWorkState();
 }
 
-class _WebWorkState extends State<WebWork> {
+class _MobileWorkState extends State<MobileWork> {
   @override
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
@@ -19,45 +18,21 @@ class _WebWorkState extends State<WebWork> {
       ),
       child: Column(
         children: [
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              CustomText(
-                text: "02.",
-                textSize: 20.0,
-                color: Color.fromRGBO(25, 218, 15, 1),
-                letterSpacing: 0.10,
-                fontWeight: FontWeight.w700,
-              ),
-              SizedBox(
-                width: 12.0,
-              ),
-              CustomText(
-                text: "Where I've Worked",
-                textSize: 26.0,
-                color: Color(0xffCCD6F6),
-                letterSpacing: 0.10,
-                fontWeight: FontWeight.w700,
-              ),
-              Container(
-                width: size.width / 4,
-                height: 1.10,
-                color: Color(0xff303C55),
-              ),
-            ],
+          SizedBox(
+            height: size.height * 0.1,
           ),
           Row(
             children: [
               Expanded(
                 flex: 1,
                 child: Container(
-                    height: size.height * 1,
+                    height: size.height * 1.2,
                     //color: Colors.indigo,
                     child: Stack(
                       children: [
                         Center(
                           child: VerticalDivider(
-                            color: Color.fromRGBO(25, 218, 15, 1),
+                            color: Color(0xff64FFDA),
                             thickness: 1.75,
                             width: 10,
                             indent: 10,
@@ -93,7 +68,7 @@ class _WebWorkState extends State<WebWork> {
               Expanded(
                   flex: 4,
                   child: Container(
-                    height: size.height,
+                    height: size.height * 1.2,
                     child: WorkBox(),
                   ))
             ],
